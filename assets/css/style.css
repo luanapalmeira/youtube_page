@@ -1,1 +1,87 @@
 @import url('reset.css');
+
+header {
+    border: 1px solid chocolate;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 10%;
+
+        .menu {
+            border: 0;
+            background-color: transparent;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        #logotipo {
+            width: 45%;
+            height: 40%;
+        }
+    }
+
+    .header-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+
+        input {
+            width: 25%;
+            height: 4vh;
+            border: 1px solid #CCCCCC;
+            padding-left: 1rem;
+        }
+
+        input:hover {
+            border: 0.8px solid #23282F;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #CCCCCC;
+            background-color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        button:hover {
+            background-color: #CCCCCC;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 7%;
+
+        .filmadora,
+        .sino {
+            border: 0;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        #avatar {
+            width: 2vw;
+            height: 4vh;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+}
