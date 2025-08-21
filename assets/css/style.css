@@ -18,6 +18,11 @@ header {
             background-color: transparent;
             margin-right: 10px;
             cursor: pointer;
+            transition: filter 0.3s ease;
+        }
+
+        .menu:hover {
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
         }
 
         #logotipo {
@@ -74,6 +79,15 @@ header {
             border: 0;
             background-color: transparent;
             cursor: pointer;
+            transition: filter 0.3s ease;
+        }
+
+        .filmadora:hover {
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+        }
+
+        .sino:hover {
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
         }
 
         #avatar {
@@ -94,7 +108,7 @@ main {
 
     .main-left {
         border: 1px solid blue;
-        height: 85vh;
+        height: 92vh;
         width: 63%;
 
         .video-box {
@@ -112,10 +126,11 @@ main {
                 cursor: pointer;
                 width: 90px;
                 height: 90px;
+                transition: filter 0.3s ease;
             }
 
             .botao-youtube:hover {
-                box-shadow: 0 8px 16 px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             }
         }
 
@@ -128,19 +143,158 @@ main {
         }
 
         .box-buttons {
-            width: 95%;
-            border: 2px solid red;
+            width: 80%;
+            height: 7vh;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+
             .box {
-                border: 2px solid orangered;
+                width: 17%;
+                height: 6vh;
+                display: flex;
+                align-items: center;
+                gap: 13px;
+
+                .canal {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+
+                    .text-1 {
+                        width: 100%;
+                        font-size: 0.875rem;
+                        color: #000000;
+                    }
+
+                    .text-2 {
+                        width: 100%;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        color: #515151;
+                    }
+                }
+            }
+
+            .inscricao {
+                background-color: #CC0000;
+                width: 8vw;
+                height: 5vh;
+                border: none;
+                font-size: 0.875rem;
+                font-weight: 600;
+                color: #FFFFFF;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+
+            .inscricao:hover {
+                background-color: #CC000085;
+            }
+
+            .like {
+                width: 6.5%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                width: 18%;
+                background-color: transparent;
+                cursor: pointer;
+                transition: filter 0.3s ease;
+                border: none;
+
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
             }
+
+            .like:hover {
+                filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+            }
+
+            .deslike {
+                width: 10.5%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: transparent;
+                cursor: pointer;
+                transition: filter 0.3s ease;
+                border: none;
+
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+
+            .deslike:hover {
+                filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+            }
+
+            .compartilhar {
+                width: 12%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: transparent;
+                cursor: pointer;
+                transition: filter 0.3s ease;
+                border: none;
+
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+
+            .compartilhar:hover {
+                filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+            }
+
+            .download {
+                width: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: transparent;
+                cursor: pointer;
+                transition: filter 0.3s ease;
+                border: none;
+
+                p {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #000000;
+                }
+            }
+
+            .download:hover {
+                filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+            }
+        }
+
+        h2 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #000000;
+            margin-top: 1rem;
+            width: 23%;
+        }
+
+        h3 {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #515151;
+            margin-top: 0.5rem;
         }
     }
 
