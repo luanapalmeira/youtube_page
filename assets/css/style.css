@@ -100,16 +100,15 @@ header {
 }
 
 main {
-    border: 1px solid red;
-    height: 93vh;
+    height: 135vh;
     display: flex;
     justify-content: center;
     gap: 20px;
 
     .main-left {
-        border: 1px solid blue;
         height: 92vh;
         width: 63%;
+        margin-top: 1rem;
 
         .video-box {
             background-color: #000000;
@@ -295,12 +294,47 @@ main {
             font-weight: 400;
             color: #515151;
             margin-top: 0.5rem;
+            width: 75%;
         }
     }
 
     .main-right {
-        border: 1px solid green;
-        height: 20vh;
-        width: 30%;
+        height: 135vh;
+        width: 27%;
+        margin-top: 1rem;
+    
+        article {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding-bottom: 1rem;
+
+            img {
+                width: 40%;
+                height: 13vh;
+                object-fit: cover;
+            }
+
+            .detalhes {
+                width: 50%;
+                height: 13vh;
+
+                h2 {
+                    font-size: 0.875rem;
+                    font-weight: 600;
+                    color: #000000;
+                    width: 65%;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    color: #515151;
+                    margin-top: 0.5rem;
+                    width: 50%;
+                }
+            }
+        }
     }
 }
